@@ -16,6 +16,5 @@ class Menu extends Model
         'category_id',
         'price',
         'size_id',
-        'ingredient_id',
     ];
 }

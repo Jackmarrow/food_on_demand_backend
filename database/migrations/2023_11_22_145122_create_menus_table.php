@@ -19,7 +19,6 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->integer('price');
             $table->foreignId('size_id')->default(1)->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignId('ingredient_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
