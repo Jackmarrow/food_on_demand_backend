@@ -26,3 +26,4 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 Route::get('/menu/top_three_pizza', [HomeController::class, 'topThreeDishes']);
 Route::get('/connected_user', [AddUserController::class, 'connectedUser']);
 Route::get("menus", [MenuController::class,"index"]);
+//Route
