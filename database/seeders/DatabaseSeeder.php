@@ -46,7 +46,8 @@ class DatabaseSeeder extends Seeder
             SizeSeeder::class,
             IngredientSeeder::class,
             MenuSeeder::class,
-            IngredientMenuSeeder::class
+            IngredientMenuSeeder::class,
+            MenuSizeSeeder::class
         ]);
     }
 }

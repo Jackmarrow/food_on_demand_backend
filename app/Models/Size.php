@@ -12,4 +12,8 @@ class Size extends Model
         'name',
         'price'
     ];
+    public function menus()
+    {
+        return $this->belongsToMany(Menu::class, 'menu_sizes');
+    }
 }

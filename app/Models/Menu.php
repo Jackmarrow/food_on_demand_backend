@@ -15,6 +15,10 @@ class Menu extends Model
         'desc',
         'category_id',
         'price',
-        'size_id',
     ];
+    
+    public function sizes()
+    {
+        return $this->belongsToMany(Size::class, 'menu_sizes');
+    }
 }
