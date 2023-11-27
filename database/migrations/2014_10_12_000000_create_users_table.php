@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('phone')->unique();
             $table->string('street_address');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('postal_code');
             $table->string('city');
             $table->string('country');
