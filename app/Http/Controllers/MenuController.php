@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class MenuController extends Controller
 {
     public function index(){
-        $menus = Menu::all();
+        $menus = Menu::with('sizes', 'ingredients')->get();
         $categories = Category::all();
         $sizes = MenuSize::all();
 

@@ -21,4 +21,11 @@ class Menu extends Model
     {
         return $this->belongsToMany(Size::class, 'menu_sizes');
     }
+
+    public function ingredients()
+    {
+        return $this->belongsToMany(Ingredient::class, 'ingredient_menus');
+    }
+
+    
 }
