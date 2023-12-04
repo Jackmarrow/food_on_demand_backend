@@ -14,4 +14,5 @@ class Basket extends Model
         'menu_id',
         'is_paid'
     ];
+    
 }

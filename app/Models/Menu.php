@@ -26,4 +26,6 @@ class Menu extends Model
     {
         return $this->belongsToMany(Ingredient::class, 'ingredient_menus');
     }
+
+    
 }
